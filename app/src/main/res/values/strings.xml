@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Prestaciones</string>
+    <string name="etname1">NOMBRE</string>
+    <string name="etname2">nombres</string>
+    <string name="apelli1">APELLIDO</string>
+    <string name="apelli2">apellidos</string>
+    <string name="salar1">SALARIO</string>
+    <string name="salar2">salario</string>
+    <string name="IRTRA">IRTRA</string>
+    <string name="INTECAP">INTECAP</string>
+    <string name="ISR">ISR</string>
+    <string name="IGSS">IGSS</string>
+    <string name="salarfinal">SALARIO FINAL</string>
+    <string name="botonenvia">ENVIAR</string>
+    <string name="botonregresa">REGRESAR</string>
+</resources>
