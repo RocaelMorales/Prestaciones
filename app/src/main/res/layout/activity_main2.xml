@@ -22,11 +22,11 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="16dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -118,6 +118,18 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/t9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="40dp"
+                android:background="#4CAF50"
+                android:text="@string/Bonoficaciones"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
                 android:id="@+id/t8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -129,6 +141,7 @@
                 android:textAlignment="center"
                 android:textSize="23sp" />
 
+
             <Button
                 android:id="@+id/rbot"
                 android:layout_width="match_parent"
@@ -137,10 +150,12 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="35dp"
                 android:backgroundTint="@color/black"
-                android:textColor="#CED1E3"
                 android:onClick="REGRESAR"
                 android:text="@string/botonregresa"
+                android:textColor="#CED1E3"
                 android:textSize="20sp" />
+
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
 

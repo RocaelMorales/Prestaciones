@@ -17,6 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
     TextView t6;
     TextView t7;
     TextView t8;
+    TextView t9;
     Button rbot;
 
     @Override
@@ -32,19 +33,28 @@ public class MainActivity2 extends AppCompatActivity {
         t6 = findViewById(R.id.t6);
         t7 = findViewById(R.id.t7);
         t8 = findViewById(R.id.t8);
-        rbot =findViewById(R.id.ebot);
+        t9 = findViewById(R.id.t9);
+        rbot = findViewById(R.id.ebot);
 
         String NOMBRE = getIntent().getExtras().getString("nombre");
         String APELLI = getIntent().getExtras().getString("apellido");
         String SUELDO = getIntent().getExtras().getString("salario");
-        t1.setText("NOMBRE: "+NOMBRE);
-        t2.setText("APELLIDOS: "+APELLI);
-        t3.setText("SUELDO BASE= "+SUELDO);
+        t1.setText("NOMBRE: " + NOMBRE);
+        t2.setText("APELLIDOS: " + APELLI);
+        t3.setText("SUELDO BASE= " + SUELDO);
 
         double liquido = Double.parseDouble(SUELDO);
         double iggs = (liquido * 4.83) / 100;
         double irtra = (liquido * 1) / 100;
         double intecap = (liquido * 1) / 100;
+        double bonificaciones;
+        if (liquido > 5000) {
+            bonificaciones = (500);
+        } else {
+        bonificaciones = 0;
+        }
+
+
         double isr;
         if (liquido > 5000) {
             isr = ((liquido * 5) / 100);
@@ -52,7 +62,7 @@ public class MainActivity2 extends AppCompatActivity {
             isr = 0;
 
         }
-        double total = (liquido - iggs - irtra - intecap - isr);
+        double total = (liquido + bonificaciones - iggs - irtra - intecap - isr);
 
 
         String IGGS = String.valueOf(iggs);
@@ -65,6 +75,8 @@ public class MainActivity2 extends AppCompatActivity {
         t6.setText("INTECAP= "+INTECAP);
         t7.setText("ISR= "+ISR);
         t8.setText("LIQUIDO TOTAL= "+TOTAL);
+        t9.setText("Bonificaciones= "+ bonificaciones);
+
     }
 
     //boton de regresar
